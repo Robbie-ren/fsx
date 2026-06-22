@@ -60,8 +60,7 @@ public class BookingService {
         }
         // add booking
         bookingRepository.save(booking);
-        //adding tickets in the tickets table
-        //ticketService.addTicket(booking, dto.seatNumbers());
+        //adding reservations
         seatReservationService.addReservation(booking, dto.seatNumbers());
         int bookingId = booking.getId();
         return new BookingAddRespDto(bookingId);

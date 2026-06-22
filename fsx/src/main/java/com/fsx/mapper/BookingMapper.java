@@ -17,21 +17,6 @@ import java.util.List;
 @AllArgsConstructor
 public class BookingMapper {
 
-    /*public Booking mapToEntity(BookingDto dto) {
-        Booking booking = new Booking();
-        booking.setBookingStatus(dto.bookingStatus());
-        booking.setSeatCount(dto.seatCount());
-        booking.setTotalAmount(dto.totalAmount());
-        return booking;
-    }*/
-
-
-    /*public BookingRespDto mapEntityToDto(Page<Booking> pages) {
-        long totalRecords = pages.getTotalElements();
-        int totalPages = pages.getTotalPages();
-        List<Booking> list = pages.getContent();
-        return new BookingRespDto(totalRecords, totalPages, list);
-    }*/
 
     public static Booking mapDtoToEntity(BookingReqDto dto, Schedule schedule, Passenger passenger){
         Booking booking = new Booking();

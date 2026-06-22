@@ -23,20 +23,6 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfig {
 
     private final JwtFilter jwtFilter;
-    /*@Bean
-    public UserDetailsService users() {
-        UserDetails user1 = User.builder()
-                .username("john_doe")
-                .password("{noop}pass123")
-                .roles("PASSENGER")
-                .build();
-        UserDetails user2 = User.builder()
-                .username("alice_chief")
-                .password("{noop}password123")
-                .roles("BUS_OPERATOR")
-                .build();
-        return new InMemoryUserDetailsManager(user1, user2);
-    }*/
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {

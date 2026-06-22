@@ -1,9 +1,8 @@
 package com.fsx.repository;
 
-import com.fsx.dto.BookingDto;
+
 import com.fsx.dto.BookingMonthStatJpqlRespDto;
 import com.fsx.enums.BookingStatus;
-import com.fsx.exception.InvalidBookingException;
 import com.fsx.model.Booking;
 import com.fsx.model.Passenger;
 import com.fsx.model.Schedule;
@@ -65,5 +64,5 @@ public interface BookingRepository extends JpaRepository<Booking, Integer> {
 """)
     Page<Booking> search(String keyword, Pageable pageable);
 
-    //boolean existsByBooking(Booking booking);
+
 }

@@ -3,7 +3,7 @@ package com.fsx.service;
 import com.fsx.dto.BusOperatorReqDto;
 import com.fsx.dto.CombinedStatBusOperatorDto;
 import com.fsx.dto.OperatorEditProfileDto;
-import com.fsx.dto.PassengerEditProfileDto;
+
 import com.fsx.enums.AccountStatus;
 import com.fsx.enums.Role;
 import com.fsx.exception.ResourceNotFoundException;
@@ -11,7 +11,7 @@ import com.fsx.mapper.BusOperatorMapper;
 import com.fsx.model.*;
 import com.fsx.repository.BusOperatorRepository;
 import com.fsx.repository.UserRepository;
-import lombok.AllArgsConstructor;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -39,10 +39,6 @@ public class BusOperatorService {
     }
 
     public void addBusOperator(BusOperatorReqDto dto) {
-
-        /*User user = (User) userService.loadUserByUsername(dto.username);
-        if(user != null)
-            throw new UserAlreadyPresentException("Username is already taken, use a different username");*/
 
         User user = new User();
         user.setUsername(dto.username());

@@ -73,36 +73,4 @@ public class BookingController {
     }
 
 
-
-
-
-
-
-
-
-    /*@PostMapping("/add/v2")
-    public void addBooking2(@Valid @RequestBody BookingDto dto){
-        bookingService.addBooking2(dto);
-    }
-
-    @GetMapping("/getAll/v2")
-    public BookingRespDto getAllBookingsV2(@RequestParam int page, @RequestParam int size){
-        return bookingService.getAllWithPagination(page, size);
-    }
-
-
-    @PutMapping("/update/{id}")
-    public void update(@PathVariable int id, @RequestBody Booking updatedBooking){
-            bookingService.update(id, updatedBooking);
-    }
-
-    @DeleteMapping("/delete-one/{id}")
-    public void deleteById(@PathVariable int id) {
-            bookingService.deleteById(id);
-    }
-
-    @GetMapping("/status")
-    public List<Booking> getByStatus(@RequestParam BookingStatus bookingStatus){
-        return bookingService.getByStatus(bookingStatus);
-    }*/
 }
