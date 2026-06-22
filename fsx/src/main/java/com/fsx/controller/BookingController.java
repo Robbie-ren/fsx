@@ -67,7 +67,7 @@ public class BookingController {
 
 
     @GetMapping("/get-bookings/v2")
-    public PaginatedBookingRespDto getAllBookingsOp(Principal principal, @RequestParam(defaultValue = "0", required = false) int page, @RequestParam(defaultValue = "10", required = false) int size, @RequestParam(required = false)String keyword){
+    public PaginatedBookingRespDto getAllBookings(Principal principal, @RequestParam(defaultValue = "0", required = false) int page, @RequestParam(defaultValue = "10", required = false) int size, @RequestParam(required = false)String keyword){
         String username = principal.getName();
         return bookingService.getAllBookingsForOperator(username, page, size, keyword);
     }
