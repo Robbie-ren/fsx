@@ -1,0 +1,7 @@
+package com.fsx.exception;
+
+public class InvalidOwnershipException extends RuntimeException {
+    public InvalidOwnershipException(String message) {
+        super(message);
+    }
+}
